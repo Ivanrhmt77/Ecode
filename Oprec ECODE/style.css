@@ -1,0 +1,358 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+* {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("Gambar/background.jpg");
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  position: fixed;
+}
+
+.navigation img {
+  width: 24px;
+  height: auto;
+  margin-right: 12px;
+  margin-left: 100px;
+}
+
+.navigation .title {
+  font-weight: 600;
+}
+
+.navigation .nav-list {
+  color: #5d646d;
+  font-weight: 400;
+}
+
+.navigation .kanan a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation .kanan .syp {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-left: 24px;
+  margin-right: 100px;
+}
+
+.navigation .kanan .sog {
+  color: black;
+}
+
+.navigation .nav-link:hover {
+  color: #db1a5a;
+}
+
+.konten {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 120px;
+}
+
+.gambar {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.gambar img {
+  max-width: 100%;
+  height: auto;
+}
+
+#docs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+#docs .kiri {
+  flex: 1.2;
+  flex-wrap: wrap;
+  margin-right: 63px;
+}
+
+#docs .kanan {
+  flex: 0.8;
+  margin-left: 63px;
+}
+
+#docs .kanan p {
+  text-align: justify;
+  font-weight: 400;
+  color: #5d646d;
+}
+
+#docs .kanan .button a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#docs .kanan .button a.start {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid #901840;
+  margin-right: 20px;
+}
+
+#docs .kanan .button a.sign {
+  padding: 8px;
+  border-radius: 6px;
+  color: #4a4a4a;
+  border: 1px solid #bcc6d2;
+}
+
+#docs .kiri a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #db1a5a;
+}
+
+#docs .kiri .teks h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.bawah {
+  background-color: #f6f6f6;
+  height: 3750px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.brands {
+  margin-top: 60px;
+}
+
+.brands .baris1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands .baris2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.brands .brand {
+  width: 295px;
+  height: 100px;
+}
+
+#community h1 {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#blog h1 {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#blog .isi {
+  margin-top: 60px;
+  display: flex;
+}
+
+#blog .isi .kolom1 {
+  flex: 0.2;
+}
+
+#blog .isi .kolom2 {
+  flex: 0.8;
+}
+
+#blog .isi .kolom2 .pernyataan .judul {
+  display: flex;
+}
+
+#blog .isi .kolom2 .pernyataan .button a.start {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#blog .isi .kolom2 .pernyataan .button a.see {
+  padding: 8px;
+  border-radius: 6px;
+  color: #4a4a4a;
+  border: 1px solid #bcc6d2;
+  text-decoration: none;
+}
+
+#blog .isi .kolom3 {
+  flex: 1;
+}
+
+#changelog .atas .kiri .button a.start {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#changelog .atas .kiri .button a.see {
+  padding: 8px;
+  border-radius: 6px;
+  color: #4a4a4a;
+  border: 1px solid #bcc6d2;
+  text-decoration: none;
+}
+
+#changelog .bawah {
+  background-image: url(Gambar/changelogbackground.png);
+  background-position: center top;
+  background-size: 100%;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  max-height: 413px;
+}
+
+#changelog .bawah .button a.start {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#changelog .bawah .button a.see {
+  padding: 8px;
+  border-radius: 6px;
+  color: #4a4a4a;
+  border: 1px solid #bcc6d2;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#pricing .jangangolput .button a.start {
+  background-color: #db1a5a;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #db1a5a;
+  margin-left: 0;
+  margin-right: 0;
+  bottom: 0;
+  height: 523px;
+  color: #ffeaf1;
+}
+
+footer .isi {
+  display: flex;
+  padding-top: 60px;
+  padding-left: 100px;
+}
+
+footer .isi .kolom1 {
+  flex: 1;
+}
+
+footer .isi .kolom1 .judul {
+  display: flex;
+}
+
+footer .isi .kolom1 .judul img {
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  margin-right: 16px;
+}
+
+footer .isi .kolom1 .judul p {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+footer .isi .kolom2 {
+  flex: 0.5;
+  margin-top: 15px;
+}
+
+footer .isi .kolom2 a.title {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+footer .isi .kolom3 {
+  flex: 0.5;
+  margin-top: 15px;
+}
+
+footer .isi .kolom3 a.title {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+footer .isi .kolom4 {
+  flex: 0.5;
+  margin-top: 15px;
+}
+
+footer .isi .kolom4 a.title {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+footer .isi .kolom5 {
+  flex: 0.5;
+  margin-top: 15px;
+}
+
+footer .isi .kolom5 a.title {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+footer .copyright p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 12px;
+}
